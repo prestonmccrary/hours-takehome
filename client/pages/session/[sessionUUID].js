@@ -90,10 +90,13 @@ export default function Session() {
                             <ClipboardButton toast={toast} textToCopy={`/join/${sessionUUID}`}/>
 
                         </div>
-                    }>
-                        <p> {'//'} insert tasks for each user</p>
-                        <p> {'//'} more responsive styles</p>
-                        <p> {'//'} chat history with mongo</p>
+                    }>  
+                        <div style={{marginTop: "90px"}}>
+                          
+                          <p>(timer and task ui would go here)</p>
+
+                        </div>
+                       
                     </Sidebar>
 
 
