@@ -12,6 +12,7 @@
     "uuid4": "^2.0.2"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   }
 }
