@@ -1,0 +1,12 @@
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    background: #EDF2F7;
+}
+
+.mainContainer::-webkit-scrollbar{
+    display: block;
+
+}
+

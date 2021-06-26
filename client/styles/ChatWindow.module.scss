@@ -1,0 +1,16 @@
+.chatWindow {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 20px 30px;
+    height: 100vh;
+
+}
+
+.msgContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
