@@ -104,7 +104,7 @@ export default function Session() {
                         chatService={chat.current}
                    />
 
-                    <Sidebar title={<>wow</>} styles={styles}>
+                    <Sidebar title={"Participants"} styles={styles}>
                         {sessionState && sessionState.currentParticipants.map((person, i) => {
                             return(
                                 <Participant person={person} key={i} styles={styles}/>

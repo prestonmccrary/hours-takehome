@@ -1,4 +1,4 @@
-import {FiCopy} from 'react-icons/fi'
+import {FiLink} from 'react-icons/fi'
 import {motion} from 'framer-motion'
 import ReactTooltip from "react-tooltip";
 
@@ -12,11 +12,8 @@ const ClipboardButton = ({textToCopy, toast, }) => {
     return(
         <>
 
-        <motion.div>
-            <FiCopy data-tip data-for="registerTip" style={{fontSize:'20px'}}  onClick={copy}/>
-            <ReactTooltip id="registerTip" place="left" effect="solid" delayShow={100} >
-                Copy link
-            </ReactTooltip>
+        <motion.div whileHover={{x: -3}}>
+            <FiLink data-tip data-for="registerTip" style={{fontSize:'20px', color:"#4299E1"}}  onClick={copy}/>
         </motion.div>
         </>
 
