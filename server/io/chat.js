@@ -1,4 +1,3 @@
-const { TrunkPage } = require('twilio/lib/rest/trunking/v1/trunk')
 const Session = require('../models/Session')
 
 
