@@ -32,9 +32,8 @@ npm run dev
 Start our Socket.io and Express backend
 
 ```
-cd ..
-cd ./server
-yarn
+cd prestons-project/server
+npm i
 npm run dev
 ```
 
