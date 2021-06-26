@@ -5,9 +5,10 @@ const chat = require('./io/chat')
 const connection = require('./db')
 const apiRoutes = require('./api')
 const app = express()
-
+const config = require('dotenv')
+config.config()
 // grabbing config
-const PORT = 4000 || process.env.PORT
+const PORT = process.env.PORT || 4000
 
 // middleware
 app.use(cors())

@@ -7,7 +7,7 @@ const ChatBox = ({ sessionState, onChange, onKeyPress}) => {
 
     return(
         <motion.input 
-            whileHover={{y: '-5px'}} 
+            whileHover={{y: '-6px'}} 
             placeholder="Message" 
             className={styles.msgInputBox}
             value={sessionState.msg}
