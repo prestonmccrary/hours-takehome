@@ -62,7 +62,7 @@ export default function Session() {
             if(isLoggedIn()){
                 setupChat()
             } else {
-                router.push(`/join/${sessionUUID}`)
+                router.push(`https://https://hours-takehome.vercel.app/join/${sessionUUID}`)
             }
         }
     }, [router])
