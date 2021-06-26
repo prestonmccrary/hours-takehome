@@ -12,8 +12,8 @@ const ClipboardButton = ({textToCopy, toast, }) => {
     return(
         <>
 
-        <motion.div whileHover={{x: -3}}>
-            <FiLink data-tip data-for="registerTip" style={{fontSize:'20px', color:"#4299E1"}}  onClick={copy}/>
+        <motion.div whileHover={{y: 2}}>
+            <FiLink data-tip data-for="registerTip" style={{fontSize:'20px', color:"#4299E1", marginLeft: '20px'}}  onClick={copy}/>
         </motion.div>
         </>
 

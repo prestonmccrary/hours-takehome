@@ -12,6 +12,8 @@ import Sidebar from '../../components/Sidebar'
 import Participant from '../../components/Participant'
 import ChatWindow from '../../components/ChatWindow'
 import ClipboardButton from '../../components/ClipboardButton'
+import ReportButton from '../../components/ReportButton'
+
 import Head from 'next/head'
 
 
@@ -87,7 +89,11 @@ export default function Session() {
                     <Sidebar styles={styles} title={
                         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer'}}>
                             {sessionState.sessionName}
-                            <ClipboardButton toast={toast} textToCopy={`/join/${sessionUUID}`}/>
+                            <div style={{display:'flex', justifyContent:'flex-end'}}>
+                                <ClipboardButton toast={toast} textToCopy={`/join/${sessionUUID}`}/>
+                                <ReportButton toast={toast} chatService={chat.current}/>
+                            </div>
+                            
 
                         </div>
                     }>  

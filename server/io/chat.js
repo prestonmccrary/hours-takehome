@@ -21,7 +21,24 @@ module.exports = (io, sessionService) => {
         })
 
         client.on("report_session", async (payload) => {
-            // implement report logic
+
+            try{
+                const {sessionUUID} = payload
+            
+                const session = await Session.findOne({smallId: sessionUUID})
+
+                session.reported = true
+
+                session.save()
+
+                console.log(session)
+                
+            } catch(err) {
+                cb({err: err.message})
+            }
+           
+
+
         })
 
         client.on("join_session", async (payload, cb) => {

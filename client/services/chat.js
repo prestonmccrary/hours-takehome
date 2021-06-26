@@ -18,6 +18,11 @@ export default class ChatService {
         this.socket.disconnect();
     }
 
+    report = () => {
+        console.log('r')
+        this.socket.emit("report_session", {sessionUUID: this.sessionUUID})
+    }
+
     joinSession = (errorFunc) => {
         this.socket.emit("join_session", {sessionUUID: this.sessionUUID, username: this.username}, (data) => {
             console.log(data)
