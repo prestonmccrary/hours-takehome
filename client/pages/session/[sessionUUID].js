@@ -90,7 +90,7 @@ export default function Session() {
                         <div style={{display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer'}}>
                             {sessionState.sessionName}
                             <div style={{display:'flex', justifyContent:'flex-end'}}>
-                                <ClipboardButton toast={toast} textToCopy={`/join/${sessionUUID}`}/>
+                                <ClipboardButton toast={toast} textToCopy={`https://hours-takehome.vercel.app/join/${sessionUUID}`}/>
                                 <ReportButton toast={toast} chatService={chat.current}/>
                             </div>
                             
